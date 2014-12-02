@@ -1,0 +1,28 @@
+{
+
+
+	"home":{
+
+		"title":"IMAGINAR E AGIR",
+		"subtitle":"nós criamos experiências novas na web, ajudando a sua marca a traduzir seu melhor no mundo digital."
+	},
+
+	"feactures": [
+
+		{
+			"title":"Webdesign /UX",
+			"text":"Nós apelamos para que sua marca passe uma agradável e nova experiência para seu público alvo."
+		},
+		{
+			"title":"Front-End",
+			"text":"Frizamos cultivar sites acessíveis de todas as formas. Responsivos e semânticos."
+		},
+		{
+			"title":"Back-End",
+			"text":"Utilizamos as mais novas tecnologias de banco de dados e programação presentes no mercado internacional."
+		}
+
+	]
+
+
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html ng-app>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Padrão HTML</title>
+
+	<!-- FACEBOOK TAGS -->
+    <meta property="og:description" content="desc" />
+    <meta property="og:title" content="title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://" id="ogUrl" />
+    <meta property="og:image" content="http://" />
+	<!-- FACEBOOK TAGS -->
+	
+	<!-- ICONES -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+	<!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+<!--
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="print" href="css/print.css">-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script src="js/libs/jquery.js"></script>
+	<script src="js/libs/angular.min.js"></script>
+    <script src="js/libs/PxLoader.js"></script>
+    <script src="js/libs/PxLoaderImage.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/init.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="page">
+
+<div id="luz1"></div>
+<!--<div id="lightboxLoader" class="lightbox"><span>10%</span><span>20%</span><span>30%</span><span>40%</span><span>50%</span><span>60%</span><span>70%</span><span>80%</span><span>90%</span><span>100%</span></div><div class="overmask"></div>
+-->
+
+<div class="page-header">
+  <h1><a href="javascript:void(0);">Disclaimer</a></h1>
+</div>
+
+<section id="home" ng-controller="appController">
+	<h1>{{ txt.home.title }}</h1>
+    <h2>{{ txt.home.subtitle }}</h2>
+    <div class="row feactures">
+    	<div class="col-lg-3" ng-class="{nomg: $index == 1}" ng-repeat="feacture in txt.feactures">
+        	<h3><span class="icon0{{$index}}"></span>{{ feacture.title }}</h3>
+            <p>{{ feacture.text }}</p>
+        </div>
+
+    
+
+    </div>
+</section>
+
+<section id="about">
+	<h5>Sobre nós</h5>
+    <h6>Conheçendo os bastidores</h6>
+    
+    <p class="ft">Somos um time de criadores, programadores e<br/>
+     idealizadores. Somos especializados na criação de sites de alta<br/>
+     experimentação do usuário, entregando e firmando projetos engajadores.</p>
+    
+    <div class="row feactures">
+    
+    	<div class="col-lg-6">
+        	<span class="icon04"></span>
+            <p>"Sinta-se em casa, a inovação mais rápida é a aberta, pelo diálogo com clientes, e não a fechada".</p>
+        </div>
+        <div class="col-lg-6">
+        	<span class="icon05"></span>
+            <p>"Nosso processo de desenvolvimento esta alinhado com todo mercado internacional, estamos sempre atualizado".</p>
+        </div>
+        <div class="col-lg-6">
+        	<span class="icon06"></span>
+            <p>"Desenvolvemos sites e aplicações para os mais váriados tipos de plataformas".</p>
+        </div>
+    
+    </div>
+    
+</section>
+
+<section id="services">
+	<h5>Serviços</h5>
+    <h6>Nosso arsenal de armas</h6>
+
+    
+    <div class="row feactures">
+    
+    	<div class="col-lg-5">
+        	<span class="icon09"></span>
+            <p>"Trabalhamos com um propósito único, criarmos e desenvolvermos os mais belos projetos. Não fazemos pasteis!</p>
+        </div>
+        <div class="col-lg-5">
+        	<span class="icon08"></span>
+            <p>"Trabalhamos com um propósito único, criarmos e desenvolvermos os mais belos projetos. Não fazemos pasteis!</p>
+        </div>
+        <div class="col-lg-5">
+        	<span class="icon07"></span>
+            <p>"Trabalhamos com um propósito único, criarmos e desenvolvermos os mais belos projetos. Não fazemos pasteis!</p>
+        </div>
+    	<div class="col-lg-5">
+        	<span class="icon10"></span>
+            <p>"Trabalhamos com um propósito único, criarmos e desenvolvermos os mais belos projetos. Não fazemos pasteis!</p>
+        </div>
+        <div class="col-lg-5">
+        	<span class="icon11"></span>
+            <p>"Trabalhamos com um propósito único, criarmos e desenvolvermos os mais belos projetos. Não fazemos pasteis!</p>
+        </div>
+        <div class="col-lg-5">
+        	<span class="icon12"></span>
+            <p>"Trabalhamos com um propósito único, criarmos e desenvolvermos os mais belos projetos. Não fazemos pasteis!</p>
+        </div>
+           
+     </div>
+    
+    <p class="ft">Somos um time de criadores, pensadores, programadores e<br/>
+     idealizadores.Trabalhamos com seriedade e qualidade nas nossas entregas,<br/>
+    Criamos GRANDES PROJETOS, não importa o tamanho do cliente.</p>
+    
+</section>
+
+<section id="clients">
+	<h5>Clientes</h5>
+    <h6>Amigos de jornada</h6>
+    
+    <div class="clients">
+    	<a href="#" class="clients01">Alatur Mobile</a>
+    	<a href="#" class="clients02">Oh Tecnologia</a>
+    	<a href="#" class="clients03">Prandini & Mizutani</a>
+    	<a href="#" class="clients04">SYS2B</a>
+    	<a href="#" class="clients05">Christino</a>
+    	<a href="#" class="clients06">SSI</a>
+        
+    </div>
+    
+</section>    
+
+<footer>
+<span>© 2014 DISCLAIMER TODOS OS DIREITOS RESERVADOS</span>
+<span><a href="#">BLOG</a> - <a href="#" class="underline">ATENDIMENTO@DISCLAIMER.COM.BR</a> - <a href="#">FACEBOOK</a></span>
+</footer>
+ 	
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <!-- <script src="js/bootstrap.min.js"></script>-->
+</body>
+</html>
